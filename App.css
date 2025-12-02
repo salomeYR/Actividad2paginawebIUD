@@ -1,0 +1,101 @@
+/*#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}*/
+.app{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.nabvar{
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px 0;
+  box-shadow: 0, 2px, 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nabvar-container {
+  max-width: 1200px;
+  margin: 0;
+  padding: 0 20px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nabvar-logo{
+  color:white;
+  text-decoration: none;
+  font-size: 1.8em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-icon{
+  font-size: 1.3em;
+}
+.nabvar-menu{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.nabvar-link{
+  color: white;
+  text-decoration: none;
+  font-weight:600 ;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.nabvar-link:hover{
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+@media(max-width: 768px){
+  .nabvar-menu{
+    gap:15px;
+  }
+  .nabvar-link{
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+}

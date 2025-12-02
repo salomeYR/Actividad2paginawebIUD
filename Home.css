@@ -1,0 +1,59 @@
+.home-page{
+    flex: 1;
+}
+.hero{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+.hero-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.hero h1{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0, 0, 0.2);
+}
+.hero p{
+    font-size: 1.2em;
+    line-height: 1.8;
+    opacity: 0.95;
+}
+.credits-section{
+    padding: 80px 0;
+}
+.credits-section h2{
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 60px;
+}
+.credits-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, mimax(320px, 1fr));
+    gap: 30px;
+    animation: fadeIn 0.6s ease;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media(max-width: 768px){
+    .hero h1{
+        font-size: 1.8em;
+    }
+    .hero p{
+        font-size: 1em;
+    }
+    .credits-grid{
+        grid-template-columns: 1fr;
+    }
+}
